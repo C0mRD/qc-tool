@@ -1,4 +1,6 @@
 flask
 requests
 moviepy
-pydubs
+pydub
+gunicorn
+ffprobe

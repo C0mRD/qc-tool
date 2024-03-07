@@ -1,0 +1,93 @@
+body{
+    background-color: #262626;
+    color: antiquewhite;
+}
+
+.custom-slider {
+    width: 90%;
+    position: relative;
+    height: 20px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+
+.slider-handle {
+    width: 20px;
+    height: 20px;
+    background-color: #007bff;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Ensure handles are above the slider bar */
+}
+
+.slider-handle.start {
+    left: 0;
+}
+
+.slider-handle.end {
+    right: 0;
+}
+
+.slider-bar {
+    height: 6px;
+    background-color: #ccc;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    transform: translateY(-50%);
+    z-index: 0; /* Ensure the slider bar is below the handles */
+}
+
+.font-size{
+    font-size: 0.9rem;
+}
+
+.time-input{
+    width: 40px;
+    /* margin-left: 10px; */
+    margin-right: 3px;
+}
+
+.time-input-milli{
+    width: 60px;
+    margin-right: 3px;
+}
+
+#transcription{
+    margin-left: 170px;
+}
+
+#zoomview-container, #overview-container {
+    width: 1000px;
+    height: 100px;
+}
+
+.w3-container{
+    background-color: #262626;
+    color: antiquewhite;
+}
+
+#waveform{
+    background-color: #4f4e4e;
+}
+
+.w3-table-all{
+    background-color: #4f4e4e;
+    color: antiquewhite;
+}
+
+.w3-table-all th, .w3-table-all tr, .w3-table-all td{
+    background-color: #4f4e4e;
+    color: antiquewhite;
+}
+
+
+.w3-hover-text-green{
+    background-color: #4f4e4e;
+    color: antiquewhite;
+
+}

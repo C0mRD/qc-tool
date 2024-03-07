@@ -31,10 +31,12 @@ def split_audio_rttm(audio_path: str,
                      end: float):
 
     # Load the audio file
-    audio = AudioSegment.from_file(audio_path, format='wav')
+    audio = AudioSegment.from_file(audio_path, format='mp3')
     
     start_time = int(start * 1000)  # Convert to milliseconds
     end_time = int(end * 1000)  # Convert to milliseconds
+    print(start_time)
+    print(end_time)
 
     # Extract the audio segment for the current turn
     turn_audio = audio[start_time:end_time]
@@ -47,7 +49,7 @@ def split_audio_rttm(audio_path: str,
 def extract_and_split_audio(file, start, end):
     # Define paths
     video_path = 'uploads/video.mp4'
-    audio_path = 'uploads/audio.wav'
+    audio_path = 'uploads/audio.mp3'
     output_folder = 'output/'
     output_file = 'output'
 
@@ -74,7 +76,7 @@ def fetch():
     video_url = video_data.get('video_url')
 
     video_path = f'static/uploads/{video_id}/video.mp4'
-    audio_path = f'static/uploads/{video_id}/audio.wav'
+    audio_path = f'static/uploads/{video_id}/audio.mp3'
 
     if not os.path.exists('static/uploads/' + video_id):
         os.makedirs('static/uploads/' + video_id)
@@ -84,11 +86,22 @@ def fetch():
 
     audio = AudioSegment.from_file(audio_path)
     duration_ms = len(audio)
-    duration_seconds = duration_ms / 1000.0
+    print(duration_ms)
+    # duration_seconds = duration_ms / 1000.0
+
+    if os.path.exists(f'static/outputs/{video_id}.zip'):
+        response = {'message': 'Video already uploaded',
+                    'audio_path': audio_path, 
+                    'duration': int(duration_ms), 
+                    'code': 'failure'}
+        return jsonify(response), 502
 
     # return render_template('index.html', video_url=video_url)
     # Return a response
-    response = {'message': 'Video uploaded successfully', 'audio_path': audio_path, 'duration': int(duration_seconds)}
+    response = {'message': 'Video uploaded successfully', 
+                'audio_path': audio_path, 
+                'duration': int(duration_ms),
+                'code': 'success'}
     return jsonify(response), 200
 
 @app.route('/clip_audio', methods=['POST'])
@@ -100,9 +113,8 @@ def clip_audio():
     start = split_data.get('start_time')
     end = split_data.get('end_time')
     video_id = split_data.get('video_id')
-    languages = []
 
-    file = f'static/uploads/{video_id}/audio.wav'
+    file = f'static/uploads/{video_id}/audio.mp3'
 
     current_date = datetime.now().date()
     current_time = datetime.now().time().strftime("%H%M%S")
@@ -114,16 +126,23 @@ def clip_audio():
     # split the audio
     split_audio_rttm(file, f'static/outputs/{video_id}/', output_filename , start, end)
 
+    # Return a response
+    response = {'message': 'Audio split successfully', 
+                'output_filename': f'{output_filename}'
+                }
+    return jsonify(response), 200
+
+@app.route('/get_languages', methods=['POST'])
+def get_languages():
+    languages = []
+
     with open(f'static/language.txt', 'r') as ff:
         lines = ff.readlines()
         for line in lines:
             language = line.split(',')[0]
             languages.append(language)
 
-    # Return a response
-    response = {'message': 'Audio split successfully', 
-                'output_filename': f'{output_filename}',
-                'languages': languages}
+    response = {'languages': languages}
     return jsonify(response), 200
 
 @app.route('/submit', methods=['POST'])
@@ -133,13 +152,16 @@ def submit():
     transcript = submit_data.get('transcript')
     language = submit_data.get('language')
     gender = submit_data.get('gender')
-    role = submit_data.get('role')
+    # role = submit_data.get('role')
     comment = submit_data.get('comment')
     filename = submit_data.get('filename')
     video_id = submit_data.get('video_id')
 
+    if comment == '':
+        comment = "NA"
+
     transcript_file = 'static/outputs/' + video_id + '/transcript.csv'
-    transcript_text = f"{filename},{transcript},{language},{gender},{role},{comment}\n"
+    transcript_text = f"{filename},{transcript},{language},{gender},{comment}\n"
 
     if not os.path.exists(transcript_file):
         with open(transcript_file, 'w') as f:
@@ -162,7 +184,7 @@ def zip_files():
         for line in lines:
             filename = line.split(',')[0]
             filenames.append(filename + '.wav')
-    # filenames = [filename + '.wav', 'transcript.csv']
+    # filenames = [filename + '.mp3', 'transcript.csv']
 
     file_paths = [os.path.join(f'static/outputs/{video_id}', file) for file in filenames]
     
@@ -172,11 +194,27 @@ def zip_files():
             zip_file.write(file_path, os.path.basename(file_path))
 
     # delete vid folder
-    shutil.rmtree(f'static/uploads/{video_id}')
-    shutil.rmtree(f'static/outputs/{video_id}')
+    # shutil.rmtree(f'static/uploads/{video_id}')
+    # shutil.rmtree(f'static/outputs/{video_id}')
 
     return send_file(zip_path, as_attachment=True)
 
+@app.route('/delete', methods=['POST'])
+def delete_files():
+    video_id = request.json.get('video_id')
+
+    if os.path.exists(f'static/uploads/{video_id}'):
+        shutil.rmtree(f'static/uploads/{video_id}')
+
+    if os.path.exists(f'static/outputs/{video_id}'):
+        shutil.rmtree(f'static/outputs/{video_id}')
+
+    if os.path.exists(f'static/outputs/{video_id}.zip'):
+        os.remove(f'static/outputs/{video_id}.zip')
+
+    response = {'message': 'Files deleted successfully'}
+    return jsonify(response), 200
+
 
 if __name__ == '__main__':
-    app.run(debug=True, port=3000)
+    app.run(debug=True, port=3000, host='0.0.0.0')

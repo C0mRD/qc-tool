@@ -1,0 +1,583 @@
+{
+    "success": true,
+    "meetings": [
+        {
+            "id": 154,
+            "slug": "19bf9472-59ae-46d6-8c70-415db5194160",
+            "name": "FY24DE000009",
+            "meeting_status": "concluded",
+            "callback_url": "https://vision.proteger.one/thankyou",
+            "is_recording_enable": true,
+            "is_tracking_enable": true,
+            "started_at": "2024-01-11T07:07:43.255+00:00",
+            "ended_at": "2024-01-11T07:11:42.281+00:00",
+            "expired_at": null,
+            "duration": null,
+            "created_by": 3,
+            "created_at": "2024-01-10T05:19:45.557+00:00",
+            "updated_at": "2024-01-11T07:07:43.255+00:00",
+            "recordings": [
+                {
+                    "id": 216,
+                    "meeting_id": 154,
+                    "resource_id": "OfcLXO-HM6pHQj2UQ627-iznFTfNJS6hqXVGOn03zoaxYZsTtQoWFPylQMYE71Exk6YuZEzPoSH31QZ0aQxjpneZBiOOPTPzrriBQDKUtMtkL63v-4buPK0lejBG2gw8hz0b2VkyjtZ71D3GZd-BBViuPn45c74Q-d-H0ptXkPRQwYFp3d__JpYf20VElvJgjSOLdrVVa0I1ejti0aImNoTdYYuAotHUCoS6Y2gcisU",
+                    "sid": "edbc1edca2463864857df8952b5bd8b2",
+                    "uid": "000000",
+                    "status": "completed",
+                    "recording_path": "recordings/production/154/edbc1edca2463864857df8952b5bd8b2_154_0.mp4",
+                    "response": {
+                        "sid": "edbc1edca2463864857df8952b5bd8b2",
+                        "payload": {
+                            "sid": "edbc1edca2463864857df8952b5bd8b2",
+                            "uid": "209455503",
+                            "cname": "154",
+                            "sendts": 1704864263188,
+                            "details": {
+                                "status": 0,
+                                "msgName": "uploaded",
+                                "fileList": [
+                                    {
+                                        "uid": "0",
+                                        "fileName": "recordings/production/154/edbc1edca2463864857df8952b5bd8b2_154_0.mp4",
+                                        "trackType": "audio_and_video",
+                                        "isPlayable": true,
+                                        "mixedAllUser": true,
+                                        "sliceStartTime": 1704864195297
+                                    },
+                                    {
+                                        "uid": "0",
+                                        "fileName": "recordings/production/154/edbc1edca2463864857df8952b5bd8b2_154.m3u8",
+                                        "trackType": "audio_and_video",
+                                        "isPlayable": true,
+                                        "mixedAllUser": true,
+                                        "sliceStartTime": 1704864195297
+                                    }
+                                ]
+                            },
+                            "sequence": 22,
+                            "serviceType": 2,
+                            "serviceScene": "rtc_record"
+                        },
+                        "noticeId": "e175f6b0a14f72e024d672bb5453b8b4",
+                        "notifyMs": 1704864263370,
+                        "eventType": 31,
+                        "productId": 3
+                    },
+                    "created_at": "2024-01-10T05:23:14.933+00:00",
+                    "updated_at": "2024-01-10T05:23:14.932+00:00"
+                },
+                {
+                    "id": 217,
+                    "meeting_id": 154,
+                    "resource_id": "xYidCaoVR_yLD84zwEW-XFuKgsO13meVipCAg7B5ITSemLf_RyEXSDFQFQBQeq-KYmnDE_HaTn2wfYvzIUrPQsM7qk5krzoULqzTzfk6GrPohNqyGuuMOYdx3kbImYnKhz12ORJy-p9GbSr4y-0VS3AOsmTDQAjyoOa-_hzocLlsgk2aBALuLYU_ARzgyzy5O0R9sDfzMLTjN_B9e3I8kXjkV__hGM3leH4i7wJ03tA",
+                    "sid": "f372a60b084b6a16f753c5828869ced2",
+                    "uid": "000000",
+                    "status": "completed",
+                    "recording_path": "recordings/production/154/f372a60b084b6a16f753c5828869ced2_154_0.mp4",
+                    "response": {
+                        "sid": "f372a60b084b6a16f753c5828869ced2",
+                        "uid": "000000",
+                        "cname": "154",
+                        "resourceId": "xYidCaoVR_yLD84zwEW-XFuKgsO13meVipCAg7B5ITSemLf_RyEXSDFQFQBQeq-KYmnDE_HaTn2wfYvzIUrPQsM7qk5krzoULqzTzfk6GrPohNqyGuuMOYdx3kbImYnKhz12ORJy-p9GbSr4y-0VS3AOsmTDQAjyoOa-_hzocLlsgk2aBALuLYU_ARzgyzy5O0R9sDfzMLTjN_B9e3I8kXjkV__hGM3leH4i7wJ03tA",
+                        "serverResponse": {
+                            "fileList": [
+                                {
+                                    "uid": "0",
+                                    "fileName": "recordings/production/154/f372a60b084b6a16f753c5828869ced2_154_0.mp4",
+                                    "trackType": "audio_and_video",
+                                    "isPlayable": true,
+                                    "mixedAllUser": true,
+                                    "sliceStartTime": 1704865143944
+                                },
+                                {
+                                    "uid": "0",
+                                    "fileName": "recordings/production/154/f372a60b084b6a16f753c5828869ced2_154.m3u8",
+                                    "trackType": "audio_and_video",
+                                    "isPlayable": true,
+                                    "mixedAllUser": true,
+                                    "sliceStartTime": 1704865143944
+                                }
+                            ],
+                            "fileListMode": "json",
+                            "uploadingStatus": "uploaded"
+                        }
+                    },
+                    "created_at": "2024-01-10T05:39:03.591+00:00",
+                    "updated_at": "2024-01-10T05:39:03.590+00:00"
+                },
+                {
+                    "id": 218,
+                    "meeting_id": 154,
+                    "resource_id": "jKC6PvHRtxQBGImWfWbSH8BUtrk_S6izX7NGMmDLVRqyXaT9NmG8O_gsr6pSvY8ZRSckEBGBbh0bWhSrx_tqRWNOA5YvNJpt35leDQnpDM8YxUtectmaqbbt8ABQv4zia21ZOMWxBGig8EtVXqHySIlTXRITYtDy4UPVZwx9-GEWn3ZP6trj1XbqvV8jiP9aaVFxUVPaSZLznoq63W-3_tVjG9d16kOuKKkeczlLM1I",
+                    "sid": "16a8ae96b542325e2f5754b089d1e662",
+                    "uid": "000000",
+                    "status": "completed",
+                    "recording_path": "recordings/production/154/16a8ae96b542325e2f5754b089d1e662_154_0.mp4",
+                    "response": {
+                        "sid": "16a8ae96b542325e2f5754b089d1e662",
+                        "payload": {
+                            "sid": "16a8ae96b542325e2f5754b089d1e662",
+                            "uid": "2594337338",
+                            "cname": "154",
+                            "sendts": 1704865369933,
+                            "details": {
+                                "status": 0,
+                                "msgName": "uploaded",
+                                "fileList": [
+                                    {
+                                        "uid": "0",
+                                        "fileName": "recordings/production/154/16a8ae96b542325e2f5754b089d1e662_154_0.mp4",
+                                        "trackType": "audio_and_video",
+                                        "isPlayable": true,
+                                        "mixedAllUser": true,
+                                        "sliceStartTime": 1704865301018
+                                    },
+                                    {
+                                        "uid": "0",
+                                        "fileName": "recordings/production/154/16a8ae96b542325e2f5754b089d1e662_154.m3u8",
+                                        "trackType": "audio_and_video",
+                                        "isPlayable": true,
+                                        "mixedAllUser": true,
+                                        "sliceStartTime": 1704865301018
+                                    }
+                                ]
+                            },
+                            "sequence": 21,
+                            "serviceType": 2,
+                            "serviceScene": "rtc_record"
+                        },
+                        "noticeId": "01ab35b27d47d94e8eff4c97c5ae889e",
+                        "notifyMs": 1704865370121,
+                        "eventType": 31,
+                        "productId": 3
+                    },
+                    "created_at": "2024-01-10T05:41:40.678+00:00",
+                    "updated_at": "2024-01-10T05:41:40.677+00:00"
+                },
+                {
+                    "id": 219,
+                    "meeting_id": 154,
+                    "resource_id": "sw9UQO9E5rYVWUs8lj0C4ir1RCPXSJr8gbn7k__uvZwQCVjiESfzpk3uGYLr_U4Gny8UeJc_oPhJeyqM6dskHyOxUyElbAfX3or_oLgLFITY7XynfTEHSPEe3EJMjSvVxl3xQav-NHEklTTXJyPR_s5WhBb-fPVeT-MIBuDhBqK8yh6ybfs6v3VYF0AwyFGLc_RrAenld8opYv9rq34fcr8vOAMrkfsBxLAyfkqx11U",
+                    "sid": "2c5e39f1de49b03bff1d7b8a5874dc22",
+                    "uid": "000000",
+                    "status": "completed",
+                    "recording_path": "recordings/production/154/2c5e39f1de49b03bff1d7b8a5874dc22_154_0.mp4",
+                    "response": {
+                        "sid": "2c5e39f1de49b03bff1d7b8a5874dc22",
+                        "uid": "000000",
+                        "cname": "154",
+                        "resourceId": "sw9UQO9E5rYVWUs8lj0C4ir1RCPXSJr8gbn7k__uvZwQCVjiESfzpk3uGYLr_U4Gny8UeJc_oPhJeyqM6dskHyOxUyElbAfX3or_oLgLFITY7XynfTEHSPEe3EJMjSvVxl3xQav-NHEklTTXJyPR_s5WhBb-fPVeT-MIBuDhBqK8yh6ybfs6v3VYF0AwyFGLc_RrAenld8opYv9rq34fcr8vOAMrkfsBxLAyfkqx11U",
+                        "serverResponse": {
+                            "fileList": [
+                                {
+                                    "uid": "0",
+                                    "fileName": "recordings/production/154/2c5e39f1de49b03bff1d7b8a5874dc22_154_0.mp4",
+                                    "trackType": "audio_and_video",
+                                    "isPlayable": true,
+                                    "mixedAllUser": true,
+                                    "sliceStartTime": 1704865534042
+                                },
+                                {
+                                    "uid": "0",
+                                    "fileName": "recordings/production/154/2c5e39f1de49b03bff1d7b8a5874dc22_154.m3u8",
+                                    "trackType": "audio_and_video",
+                                    "isPlayable": true,
+                                    "mixedAllUser": true,
+                                    "sliceStartTime": 1704865534042
+                                }
+                            ],
+                            "fileListMode": "json",
+                            "uploadingStatus": "uploaded"
+                        }
+                    },
+                    "created_at": "2024-01-10T05:45:33.668+00:00",
+                    "updated_at": "2024-01-10T05:45:33.668+00:00"
+                },
+                {
+                    "id": 220,
+                    "meeting_id": 154,
+                    "resource_id": "4AejRLmOO7ohxLiSkTy39yFq-RrSQaGtgA1NQVCxBhuV62yYcXgfwU3LULKKEohL2LzTOMV4FfiMmO98XsDcqGAvbaN8KmPkMADDfuTwD1SxoQ25IMH1IZiooYkQgDkhRV_2-HLxdpvpcVoIfWmzSXNF-CsKNDzR6ZB01qFQ9Cjm-QBufmgQ3etERq7X-noLO_Ot5GZiYpvjeAwHsHY3jI7GTo8RAb3BgpuK8XnrBM8",
+                    "sid": "e80ebec69c4555ef583b319092aa1792",
+                    "uid": "000000",
+                    "status": "completed",
+                    "recording_path": "recordings/production/154/e80ebec69c4555ef583b319092aa1792_154_0.mp4",
+                    "response": {
+                        "sid": "e80ebec69c4555ef583b319092aa1792",
+                        "payload": {
+                            "sid": "e80ebec69c4555ef583b319092aa1792",
+                            "uid": "1890789182",
+                            "cname": "154",
+                            "sendts": 1704867057853,
+                            "details": {
+                                "status": 0,
+                                "msgName": "uploaded",
+                                "fileList": [
+                                    {
+                                        "uid": "0",
+                                        "fileName": "recordings/production/154/e80ebec69c4555ef583b319092aa1792_154_0.mp4",
+                                        "trackType": "audio_and_video",
+                                        "isPlayable": true,
+                                        "mixedAllUser": true,
+                                        "sliceStartTime": 1704866982578
+                                    },
+                                    {
+                                        "uid": "0",
+                                        "fileName": "recordings/production/154/e80ebec69c4555ef583b319092aa1792_154.m3u8",
+                                        "trackType": "audio_and_video",
+                                        "isPlayable": true,
+                                        "mixedAllUser": true,
+                                        "sliceStartTime": 1704866982578
+                                    }
+                                ]
+                            },
+                            "sequence": 22,
+                            "serviceType": 2,
+                            "serviceScene": "rtc_record"
+                        },
+                        "noticeId": "2286fa38d34c02f7cb5821a2983de41c",
+                        "notifyMs": 1704867058016,
+                        "eventType": 31,
+                        "productId": 3
+                    },
+                    "created_at": "2024-01-10T06:09:42.237+00:00",
+                    "updated_at": "2024-01-10T06:09:42.236+00:00"
+                },
+                {
+                    "id": 221,
+                    "meeting_id": 154,
+                    "resource_id": "zWotw5Pv14rCn07jnauntIotXApmY4ryQRrmz0zWT3jvX85L9OZ7BJk0vTjoee31buk3ugkYoa6M_xAQTHzy_K7AbSsaZW3mEJKPZYTpmLPE-QkVxSutwRGz0pTc8YSVF89TMUhIPsJn1Kw1VgwSu7hRCSwj65qVIuOx-HC38bXj6mQIHCJ1iCmNsTgn7XNTIGkKh4mGNbHTjVYTy7Z4ZhYQhi9TL3bXamKHUo9Gm7Q",
+                    "sid": "cf093cd80f4ccf52694119b482ee0732",
+                    "uid": "000000",
+                    "status": "completed",
+                    "recording_path": "recordings/production/154/cf093cd80f4ccf52694119b482ee0732_154_0.mp4",
+                    "response": {
+                        "sid": "cf093cd80f4ccf52694119b482ee0732",
+                        "payload": {
+                            "sid": "cf093cd80f4ccf52694119b482ee0732",
+                            "uid": "2213725344",
+                            "cname": "154",
+                            "sendts": 1704868695505,
+                            "details": {
+                                "status": 0,
+                                "msgName": "uploaded",
+                                "fileList": [
+                                    {
+                                        "uid": "0",
+                                        "fileName": "recordings/production/154/cf093cd80f4ccf52694119b482ee0732_154_0.mp4",
+                                        "trackType": "audio_and_video",
+                                        "isPlayable": true,
+                                        "mixedAllUser": true,
+                                        "sliceStartTime": 1704868635922
+                                    },
+                                    {
+                                        "uid": "0",
+                                        "fileName": "recordings/production/154/cf093cd80f4ccf52694119b482ee0732_154.m3u8",
+                                        "trackType": "audio_and_video",
+                                        "isPlayable": true,
+                                        "mixedAllUser": true,
+                                        "sliceStartTime": 1704868635922
+                                    }
+                                ]
+                            },
+                            "sequence": 22,
+                            "serviceType": 2,
+                            "serviceScene": "rtc_record"
+                        },
+                        "noticeId": "91d309c35f46b7ba0af63cab26c03d15",
+                        "notifyMs": 1704868695660,
+                        "eventType": 31,
+                        "productId": 3
+                    },
+                    "created_at": "2024-01-10T06:37:15.566+00:00",
+                    "updated_at": "2024-01-10T06:37:15.566+00:00"
+                }
+            ],
+            "user": {
+                "id": 3,
+                "name": "Test Application",
+                "username": "test_application",
+                "user_type": "application",
+                "is_disable": null,
+                "created_at": "2023-11-07T07:31:31.622+00:00",
+                "updated_at": "2023-11-07T07:31:31.621+00:00",
+                "isAdmin": false
+            },
+            "trackings": [
+                {
+                    "id": 223,
+                    "meeting_id": 154,
+                    "uid": null,
+                    "client_lat": 22.8824051,
+                    "client_lng": 88.0197647,
+                    "provider_ip": null,
+                    "provider_country": null,
+                    "provider_state": null,
+                    "provider_city": null,
+                    "provider_lat": null,
+                    "provider_lng": null,
+                    "created_at": "2024-01-10T05:22:57.022+00:00",
+                    "updated_at": "2024-01-10T05:22:57.022+00:00"
+                },
+                {
+                    "id": 224,
+                    "meeting_id": 154,
+                    "uid": null,
+                    "client_lat": 22.8824051,
+                    "client_lng": 88.0197647,
+                    "provider_ip": null,
+                    "provider_country": null,
+                    "provider_state": null,
+                    "provider_city": null,
+                    "provider_lat": null,
+                    "provider_lng": null,
+                    "created_at": "2024-01-10T05:39:01.011+00:00",
+                    "updated_at": "2024-01-10T05:39:01.011+00:00"
+                },
+                {
+                    "id": 225,
+                    "meeting_id": 154,
+                    "uid": null,
+                    "client_lat": 22.8824039,
+                    "client_lng": 88.0197751,
+                    "provider_ip": null,
+                    "provider_country": null,
+                    "provider_state": null,
+                    "provider_city": null,
+                    "provider_lat": null,
+                    "provider_lng": null,
+                    "created_at": "2024-01-10T05:39:28.804+00:00",
+                    "updated_at": "2024-01-10T05:39:28.804+00:00"
+                },
+                {
+                    "id": 226,
+                    "meeting_id": 154,
+                    "uid": null,
+                    "client_lat": 22.8824039,
+                    "client_lng": 88.0197751,
+                    "provider_ip": null,
+                    "provider_country": null,
+                    "provider_state": null,
+                    "provider_city": null,
+                    "provider_lat": null,
+                    "provider_lng": null,
+                    "created_at": "2024-01-10T05:39:48.558+00:00",
+                    "updated_at": "2024-01-10T05:39:48.557+00:00"
+                },
+                {
+                    "id": 227,
+                    "meeting_id": 154,
+                    "uid": null,
+                    "client_lat": 22.8824039,
+                    "client_lng": 88.0197751,
+                    "provider_ip": null,
+                    "provider_country": null,
+                    "provider_state": null,
+                    "provider_city": null,
+                    "provider_lat": null,
+                    "provider_lng": null,
+                    "created_at": "2024-01-10T05:45:30.541+00:00",
+                    "updated_at": "2024-01-10T05:45:30.541+00:00"
+                },
+                {
+                    "id": 228,
+                    "meeting_id": 154,
+                    "uid": null,
+                    "client_lat": 22.8824039,
+                    "client_lng": 88.0197751,
+                    "provider_ip": null,
+                    "provider_country": null,
+                    "provider_state": null,
+                    "provider_city": null,
+                    "provider_lat": null,
+                    "provider_lng": null,
+                    "created_at": "2024-01-10T06:09:31.464+00:00",
+                    "updated_at": "2024-01-10T06:09:31.464+00:00"
+                },
+                {
+                    "id": 229,
+                    "meeting_id": 154,
+                    "uid": null,
+                    "client_lat": 22.8824039,
+                    "client_lng": 88.0197751,
+                    "provider_ip": null,
+                    "provider_country": null,
+                    "provider_state": null,
+                    "provider_city": null,
+                    "provider_lat": null,
+                    "provider_lng": null,
+                    "created_at": "2024-01-10T06:37:03.545+00:00",
+                    "updated_at": "2024-01-10T06:37:03.539+00:00"
+                }
+            ]
+        },
+        {
+            "id": 153,
+            "slug": "7828729f-eced-4848-9dbb-c28c8674c108",
+            "name": "FY24DE000007",
+            "meeting_status": "concluded",
+            "callback_url": "https://vision.proteger.one/thankyou",
+            "is_recording_enable": true,
+            "is_tracking_enable": true,
+            "started_at": "2024-01-09T11:20:27.272+00:00",
+            "ended_at": "2024-01-09T11:21:13.726+00:00",
+            "expired_at": null,
+            "duration": null,
+            "created_by": 3,
+            "created_at": "2024-01-09T09:57:39.363+00:00",
+            "updated_at": "2024-01-09T11:20:27.273+00:00",
+            "recordings": [
+                {
+                    "id": 214,
+                    "meeting_id": 153,
+                    "resource_id": "sQXaDiheQqX37NeLRhANLMVQqB6PlBHnX2a7UQTpP5WIfUJ4cF0-q1pJD84WeH112u6qQGmEqIbYbtwjZcglv0HtynQi8iKOfzKPBPv6oC9efjB050zNbSJJLpPrFmkL4kxNVH7Zgx-fM6fAw6sser1rBrIh6lcnCfpU9alHIZEbllbeopkBe6xr2USX93ck2q1RGB85tSWhRcbbJDatxt1KMxnyK-XHPH9dSEglC-k",
+                    "sid": "fb3cecaaac4a35a5f0d2c6abcb86d5f2",
+                    "uid": "000000",
+                    "status": "completed",
+                    "recording_path": "recordings/production/153/fb3cecaaac4a35a5f0d2c6abcb86d5f2_153_0.mp4",
+                    "response": {
+                        "sid": "fb3cecaaac4a35a5f0d2c6abcb86d5f2",
+                        "payload": {
+                            "sid": "fb3cecaaac4a35a5f0d2c6abcb86d5f2",
+                            "uid": "4215216977",
+                            "cname": "153",
+                            "sendts": 1704797462651,
+                            "details": {
+                                "status": 0,
+                                "msgName": "uploaded",
+                                "fileList": [
+                                    {
+                                        "uid": "0",
+                                        "fileName": "recordings/production/153/fb3cecaaac4a35a5f0d2c6abcb86d5f2_153_0.mp4",
+                                        "trackType": "audio_and_video",
+                                        "isPlayable": true,
+                                        "mixedAllUser": true,
+                                        "sliceStartTime": 1704797378742
+                                    },
+                                    {
+                                        "uid": "0",
+                                        "fileName": "recordings/production/153/fb3cecaaac4a35a5f0d2c6abcb86d5f2_153.m3u8",
+                                        "trackType": "audio_and_video",
+                                        "isPlayable": true,
+                                        "mixedAllUser": true,
+                                        "sliceStartTime": 1704797378742
+                                    }
+                                ]
+                            },
+                            "sequence": 22,
+                            "serviceType": 2,
+                            "serviceScene": "rtc_record"
+                        },
+                        "noticeId": "2d7d4bf4634209b627b653bfbc7bf4e1",
+                        "notifyMs": 1704797462812,
+                        "eventType": 31,
+                        "productId": 3
+                    },
+                    "created_at": "2024-01-09T10:49:38.369+00:00",
+                    "updated_at": "2024-01-09T10:49:38.368+00:00"
+                },
+                {
+                    "id": 215,
+                    "meeting_id": 153,
+                    "resource_id": "x9DHB1_054Y0BGl1bPX_tUrtGBawyXiOTJGkbmVoRnBG5DzabIZuTc09RdxeTsIc_YF47xA78Gq27M1SEvMArEl0OvhgQQFziiNXBXg3lirSCCcsb-iBgia9ugGnaNSQjLPbX4dyHvpolG00EeAdMu_QBHOU0nVEd-nZ5vbW3T0z9VLPUjmoEPA3M4QbeRUlth8iehTk0V6qsaM-gpugAY5ij6YM1InBLfN4EXmQdnY",
+                    "sid": "1ed662a06945b3693e1a61a5febe8812",
+                    "uid": "000000",
+                    "status": "completed",
+                    "recording_path": "recordings/production/153/1ed662a06945b3693e1a61a5febe8812_153_0.mp4",
+                    "response": {
+                        "sid": "1ed662a06945b3693e1a61a5febe8812",
+                        "payload": {
+                            "sid": "1ed662a06945b3693e1a61a5febe8812",
+                            "uid": "1057807114",
+                            "cname": "153",
+                            "sendts": 1704799312823,
+                            "details": {
+                                "status": 0,
+                                "msgName": "uploaded",
+                                "fileList": [
+                                    {
+                                        "uid": "0",
+                                        "fileName": "recordings/production/153/1ed662a06945b3693e1a61a5febe8812_153_0.mp4",
+                                        "trackType": "audio_and_video",
+                                        "isPlayable": true,
+                                        "mixedAllUser": true,
+                                        "sliceStartTime": 1704799240825
+                                    },
+                                    {
+                                        "uid": "0",
+                                        "fileName": "recordings/production/153/1ed662a06945b3693e1a61a5febe8812_153.m3u8",
+                                        "trackType": "audio_and_video",
+                                        "isPlayable": true,
+                                        "mixedAllUser": true,
+                                        "sliceStartTime": 1704799240825
+                                    }
+                                ]
+                            },
+                            "sequence": 23,
+                            "serviceType": 2,
+                            "serviceScene": "rtc_record"
+                        },
+                        "noticeId": "ac9ead62a44b70235cfe0998a54052fc",
+                        "notifyMs": 1704799312983,
+                        "eventType": 31,
+                        "productId": 3
+                    },
+                    "created_at": "2024-01-09T11:20:40.463+00:00",
+                    "updated_at": "2024-01-09T11:20:40.462+00:00"
+                }
+            ],
+            "user": {
+                "id": 3,
+                "name": "Test Application",
+                "username": "test_application",
+                "user_type": "application",
+                "is_disable": null,
+                "created_at": "2023-11-07T07:31:31.622+00:00",
+                "updated_at": "2023-11-07T07:31:31.621+00:00",
+                "isAdmin": false
+            },
+            "trackings": [
+                {
+                    "id": 221,
+                    "meeting_id": 153,
+                    "uid": null,
+                    "client_lat": 28.63138153971546,
+                    "client_lng": 77.13439946131463,
+                    "provider_ip": null,
+                    "provider_country": null,
+                    "provider_state": null,
+                    "provider_city": null,
+                    "provider_lat": null,
+                    "provider_lng": null,
+                    "created_at": "2024-01-09T10:49:35.235+00:00",
+                    "updated_at": "2024-01-09T10:49:35.234+00:00"
+                },
+                {
+                    "id": 222,
+                    "meeting_id": 153,
+                    "uid": null,
+                    "client_lat": 28.63152347223878,
+                    "client_lng": 77.13454691216401,
+                    "provider_ip": null,
+                    "provider_country": null,
+                    "provider_state": null,
+                    "provider_city": null,
+                    "provider_lat": null,
+                    "provider_lng": null,
+                    "created_at": "2024-01-09T11:20:37.266+00:00",
+                    "updated_at": "2024-01-09T11:20:37.266+00:00"
+                }
+            ]
+        }
+    ],
+    "meta": {
+        "total": 121,
+        "per_page": 2,
+        "current_page": 1,
+        "last_page": 61,
+        "first_page": 1,
+        "first_page_url": "/?page=1",
+        "last_page_url": "/?page=61",
+        "next_page_url": "/?page=2",
+        "previous_page_url": null
+    }
+}
